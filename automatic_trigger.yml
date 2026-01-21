@@ -1,10 +1,6 @@
-name: Automatic Workflow
+name: Automatic-Workflow_23
 on:
-  push:
-   branches:
-      - main
-      - master
-  workflow_dispatch:
+  push
 
 jobs:
   build:
