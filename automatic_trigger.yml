@@ -1,14 +1,9 @@
-name: automatic workflow
-on: 
-  push:
-      branches:
-        - main
+name: Automatic Workflow
+on:
+  push
 
 jobs:
-
-    build:
-
-        runs-on: ubuntu-latest
-         
-        steps:
-          - run: echo "Building..."
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building..."
