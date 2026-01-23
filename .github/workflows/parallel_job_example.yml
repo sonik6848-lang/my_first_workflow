@@ -42,7 +42,9 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Run tests #this script run unit test to detect early error
-        run: npm test --if-present
+        run: |
+              npm install
+              npm test 
 
       - name: Debug message
         if: env.DEBUG == 'true'  #with this we will able to debug the code stepwise
@@ -68,7 +70,9 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Run tests
-        run: npm test --if-present
+        run: |
+              npm install
+              npm test 
 
       - name: Debug message
         if: env.DEBUG == 'true'
