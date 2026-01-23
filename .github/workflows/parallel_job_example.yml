@@ -42,7 +42,7 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: install dependencies
-        run: install npm ci
+        run:  npm ci
 
       - name: Run tests #this script run unit test to detect early error
         run: |
