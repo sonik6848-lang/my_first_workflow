@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish test results
-        uses: actions/upload-artifact@v3 #it will use pre built action to upload artifcats for logs,binaries which can later be downloaded for further use
+        uses: actions/upload-artifact@v4 #it will use pre built action to upload artifcats for logs,binaries which can later be downloaded for further use
         with:
           name: test-results
           path: test-results.xml
